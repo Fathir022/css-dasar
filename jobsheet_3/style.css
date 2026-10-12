@@ -5,6 +5,8 @@
 }
 
 .navbar {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -12,7 +14,7 @@
     padding: 16px 20px;
     box-sizing: border-box;
     border: 2px solid rgb(80, 170, 255);
-    background-color: rgb(160, 211, 255);
+    background-color: rgb(255, 123, 0);
 }
 
 .menu {
@@ -32,7 +34,7 @@
     padding: 16px 20px;
     box-sizing: border-box;
     border: 2px solid rgb(80, 170, 255);
-    background-color: rgb(160, 211, 255);
+    background-color: rgb(255, 123, 0);
     height: 300px;
     align-items: center;
     flex-wrap: wrap;
@@ -56,13 +58,16 @@
 }
 
 .galeri {
+    background-color:  rgb(255, 123, 0);
     border: 1px solid teal;
     padding: 5px;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .card {
+    background-color: rgb(213, 215, 218);
+    border-radius: 15px;
     padding: 3px;
     width: 150px;
     border: 1px solid rgb(80, 170, 255);
@@ -71,6 +76,7 @@
 }
 
 .card img {
+    border-radius: 15px;
     width: 120px;
     align-self: center;
 }
@@ -78,17 +84,19 @@
 .btn {
     border-radius: 10px;
     text-align: center;
-    width: 100px;
+    width: 125px;
     align-self: center;
-    background-color: aqua;
+    background-color: rgb(255, 123, 0);
 }
 
 .footer {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     border: 1px solid aqua;
     padding: 5px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(160, 211, 255);
+    background-color: rgb(255, 123, 0);
 }
 
 .logo {
