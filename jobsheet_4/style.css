@@ -1,0 +1,150 @@
+* {
+    margin: 5px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.navbar {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 24px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(80, 170, 255);
+    background-color: rgb(255, 123, 0);
+}
+
+.menu {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.menu div {
+    border: 2px solid rgb(80, 170, 255);
+}
+
+.hero {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    justify-content: space-between;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgb(80, 170, 255);
+    background-color: rgb(255, 123, 0);
+    height: 300px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.buy {
+    display: inline-block;
+    background-color: thistle;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.hero img {
+    width: 200px;
+}
+
+.galeri {
+    background-color:  rgb(255, 123, 0);
+    border: 1px solid teal;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(213, 215, 218);
+    border-radius: 15px;
+    padding: 3px;
+    width: 150px;
+    border: 1px solid rgb(80, 170, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    border-radius: 15px;
+    width: 120px;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top: auto;
+    border-radius: 10px;
+    text-align: center;
+    width: 125px;
+    align-self: center;
+    background-color: rgb(255, 123, 0);
+}
+
+.footer {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 1px solid aqua;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 123, 0);
+}
+
+.logo {
+    border: 2px solid aqua;
+    background-color: white;
+}
+
+.contact {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contact div {
+    background-color: white;
+    border: 1px solid aqua;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero {
+        font-size: 1rem;
+
+    }
+
+    .hero img {
+        width: 150px;
+        height: auto; 
+        flex-shrink: 0;
+    }
+
+    .galeri {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; 
+        gap: 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .galeri {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center; 
+        gap: 10px;
+    }
+}
